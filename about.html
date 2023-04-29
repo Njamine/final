@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>About Me</title>
+</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+
+
+
+<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+<body>
+	<header>
+		 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          {% if user.is_authenticated %}
+          <a class="nav-item nav-link" id="home" href="/">Home</a>
+          <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+          {% else %}
+          <a class="nav-item nav-link" id="login" href="/login">Login</a>
+          <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+		<h1>Welcome to Benjamin's website</h1>
+		<nav>
+			<ul>
+
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>I am Benjamin Morang’a a 21-year-old student from Jomo Kenyatta University of Agriculture and Technology currently pursuing a course in BSc. Geospatial Information Science.
+I love coding and
+I am a diligent worker able to multitask and prioritize effectively.</p>
+		</section>
+
+		</section>
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<p>Email: morangabenjamin50@gmail.com
+
+			Tel: 0718829330</p>
+		</section>
+	</main>
+
+	</footer>
+</body>
+</html>
